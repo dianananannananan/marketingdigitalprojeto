@@ -60,6 +60,22 @@
             transform: scale(1.05);
         }
 
+        .artigo a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .artigo a:hover {
+            background-color: #333;
+            transform: translateY(-2px);
+        }
+
         /* Responsive adjustments for mobile */
         @media (max-width: 768px) {
             .artigo {
@@ -83,6 +99,11 @@
             color: #ccc;
         }
 
+        .logo {
+            height: 100px;
+            filter: invert(1); /* Inverts the colors, making black white and vice versa */
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -91,7 +112,7 @@
 </head>
 <body>
     <header>
-        <h1>Jacquemus</h1>
+        <img src="imagens/logo.png" alt="Jacquemus Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="sobre.html">Sobre Nós</a>
@@ -107,30 +128,35 @@
                 <h3>O Minimalismo na Moda</h3>
                 <img src="imagens/art1_1.jpg" alt="Minimalismo na Moda">
                 <p>Descubra como a Jacquemus redefine o minimalismo na moda.</p>
+                <a href="artigo1.html">Ver Detalhes</a>
             </div>
             
             <div class="artigo">
                 <h3>As Cores do Verão</h3>
                 <img src="imagens/art2.jpg" alt="Cores do Verão">
                 <p>Veja como as cores vibrantes se misturam à estética da marca.</p>
+                <a href="artigo2.html">Ver Detalhes</a>
             </div>
             
             <div class="artigo">
                 <h3>A Elegância dos Cortes Assimétricos</h3>
                 <img src="imagens/art3.jpg" alt="Cortes Assimétricos">
                 <p>Entenda como os cortes geométricos são o novo clássico da moda.</p>
+                <a href="artigo3.html">Ver Detalhes</a>
             </div>
             
             <div class="artigo">
                 <h3>Acessórios que Definem Tendências</h3>
                 <img src="imagens/art4.jpg" alt="Acessórios de Tendência">
                 <p>Os detalhes fazem a diferença! Conheça os acessórios icônicos.</p>
+                <a href="artigo4.html">Ver Detalhes</a>
             </div>
             
             <div class="artigo">
                 <h3>Inspirações da Riviera Francesa</h3>
                 <img src="imagens/art5.jpg" alt="Riviera Francesa">
                 <p>Explore como o estilo da Riviera Francesa influencia as coleções Jacquemus.</p>
+                <a href="artigo5.html">Ver Detalhes</a>
             </div>
             
         </section>

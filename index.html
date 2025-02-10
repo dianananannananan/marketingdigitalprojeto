@@ -55,15 +55,18 @@
             flex-wrap: wrap;
         }
         .imagem-grande {
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px; /* Opcional: bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: efeito de sombra */
-}
-
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px; /* Opcional: bordas arredondadas */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: efeito de sombra */
+        }
+        .logo {
+            height: 100px;
+            filter: invert(1); /* Inverts the colors, making black white and vice versa */
+        }
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
@@ -72,7 +75,7 @@
 </head>
 <body>
     <header>
-        <h1>Jacquemus</h1>
+        <img src="imagens/logo.png" alt="Jacquemus Logo" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="sobre.html">Sobre Nós</a>
