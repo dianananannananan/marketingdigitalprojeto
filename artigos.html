@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Artigos sobre moda Jacquemus">
+    <meta name="keywords" content="artigos, moda, jacquemus, estilo">
+    <meta name="author" content="Diana Sofia">
+    <title>Jacquemus - Artigos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+            text-align: center;
+        }
+        
+        header, footer {
+            background-color: #000;
+            color: #fff;
+            padding: 15px;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px; /* tamanho do container do artigo */
+            margin: auto;
+            padding: 20px;
+        }
+
+        .artigo {
+            background: #f8f8f8;
+            padding: 15px; /* Smaller padding */
+            margin: 15px auto; /* Reduced margin */
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 80%; /* Makes each article smaller */
+        }
+
+        .artigo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .artigo img {
+            width: 100%;
+            max-width: 300px; /* Smaller images */
+            height: 390px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .artigo img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments for mobile */
+        @media (max-width: 768px) {
+            .artigo {
+                width: 95%; /* More compact on small screens */
+            }
+
+            .artigo img {
+                max-width: 120px;
+                height: 120px;
+            }
+        }
+
+        nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jacquemus</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="produto.html">Produto</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="artigos.html">Artigos</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="artigos">
+            <h2>Artigos</h2>
+
+            <div class="artigo">
+                <h3>O Minimalismo na Moda</h3>
+                <img src="imagens/art1_1.jpg" alt="Minimalismo na Moda">
+                <p>Descubra como a Jacquemus redefine o minimalismo na moda.</p>
+            </div>
+            
+            <div class="artigo">
+                <h3>As Cores do Verão</h3>
+                <img src="imagens/art2.jpg" alt="Cores do Verão">
+                <p>Veja como as cores vibrantes se misturam à estética da marca.</p>
+            </div>
+            
+            <div class="artigo">
+                <h3>A Elegância dos Cortes Assimétricos</h3>
+                <img src="imagens/art3.jpg" alt="Cortes Assimétricos">
+                <p>Entenda como os cortes geométricos são o novo clássico da moda.</p>
+            </div>
+            
+            <div class="artigo">
+                <h3>Acessórios que Definem Tendências</h3>
+                <img src="imagens/art4.jpg" alt="Acessórios de Tendência">
+                <p>Os detalhes fazem a diferença! Conheça os acessórios icônicos.</p>
+            </div>
+            
+            <div class="artigo">
+                <h3>Inspirações da Riviera Francesa</h3>
+                <img src="imagens/art5.jpg" alt="Riviera Francesa">
+                <p>Explore como o estilo da Riviera Francesa influencia as coleções Jacquemus.</p>
+            </div>
+            
+        </section>
+    </div>
+
+    <footer>
+        <p>Trabalho realizado por Diana Sofia.</p>
+    </footer>
+</body>
+</html>
