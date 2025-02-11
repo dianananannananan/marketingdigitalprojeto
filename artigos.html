@@ -26,19 +26,26 @@
 
         .container {
             width: 90%;
-            max-width: 700px;
+            max-width: 1200px;
             margin: auto;
             padding: 20px;
+        }
+
+        .artigos-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .artigo {
             background: #f8f8f8;
             padding: 15px;
-            margin: 15px auto;
+            margin: 15px;
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 80%;
+            width: calc(33% - 30px);
+            box-sizing: border-box;
         }
 
         .artigo:hover {
@@ -48,8 +55,7 @@
 
         .artigo img {
             width: 100%;
-            max-width: 300px;
-            height: 390px;
+            height: auto;
             object-fit: cover;
             border-radius: 8px;
             margin-bottom: 8px;
@@ -78,12 +84,14 @@
 
         @media (max-width: 768px) {
             .artigo {
-                width: 95%;
+                width: calc(50% - 30px);
             }
+        }
 
-            .artigo img {
-                max-width: 120px;
-                height: 120px;
+        @media (max-width: 480px) {
+            .artigo {
+                width: 100%;
+                margin: 15px 0;
             }
         }
 
@@ -122,42 +130,37 @@
     <div class="container">
         <section id="artigos">
             <h2>Artigos</h2>
-
-            <div class="artigo">
-                <h3>Le Chiquito</h3>
-                <img src="imagens/art1_1.jpg" alt="Minimalismo na Moda">
-                <p>O icónico Le Chiquito é conhecido pelo seu design compacto e minimalista. Este acessório elegante e contemporâneo é perfeito para adicionar um toque de sofisticação a qualquer look.</p>
-                <a href="artigo1.html">Ver Detalhes</a>
+            <div class="artigos-container">
+                <div class="artigo">
+                    <h3>Le Chiquito</h3>
+                    <img src="imagens/art1_1.jpg" alt="Minimalismo na Moda">
+                    <a href="artigo1.html">Ver Detalhes</a>
+                </div>
+                
+                <div class="artigo">
+                    <h3>The Gadjo Bucket</h3>
+                    <img src="imagens/art2.jpg" alt="Cores do Verão">
+                    <a href="artigo2.html">Ver Detalhes</a>
+                </div>
+                
+                <div class="artigo">
+                    <h3>O Cachecol</h3>
+                    <img src="imagens/art3.jpg" alt="Cortes Assimétricos">
+                    <a href="artigo3.html">Ver Detalhes</a>
+                </div>
+                
+                <div class="artigo">
+                    <h3>The Platano</h3>
+                    <img src="imagens/theplatanobodysuit.webp" alt="Acessórios de Tendência">
+                    <a href="artigo4.html">Ver Detalhes</a>
+                </div>
+                
+                <div class="artigo">
+                    <h3>The Ballet Mules</h3>
+                    <img src="imagens/art5.jpg" alt="Riviera Francesa">
+                    <a href="artigo5.html">Ver Detalhes</a>
+                </div>
             </div>
-            
-            <div class="artigo">
-                <h3>Le Chapeau Bomba</h3>
-                <img src="imagens/art2.jpg" alt="Cores do Verão">
-                <p>O Le Chapeau Bomba, com a sua aba extra larga, é uma peça icónica das coleções Jacquemus. Feito artesanalmente com materiais naturais, este chapéu captura a essência do verão mediterrânico com a sua silhueta dramática e elegante.</p>
-                <a href="artigo2.html">Ver Detalhes</a>
-            </div>
-            
-            <div class="artigo">
-                <h3>Cachecol Jacquemus Clássico</h3>
-                <img src="imagens/art3.jpg" alt="Cortes Assimétricos">
-                <p>O cachecol clássico da Jacquemus é a personificação da sofisticação simples. Confeccionado com materiais premium, oferece conforto e qualidade excepcionais, tornando-se um acessório indispensável.</p>
-                <a href="artigo3.html">Ver Detalhes</a>
-            </div>
-            
-            <div class="artigo">
-                <h3>Acessórios que Definem Tendências</h3>
-                <img src="imagens/art4.jpg" alt="Acessórios de Tendência">
-                <p>Descubra os acessórios icónicos que estão a definir tendências e a elevar qualquer visual. Cada peça é cuidadosamente desenhada para adicionar um toque de estilo e elegância.</p>
-                <a href="artigo4.html">Ver Detalhes</a>
-            </div>
-            
-            <div class="artigo">
-                <h3>Inspirações da Riviera Francesa</h3>
-                <img src="imagens/art5.jpg" alt="Riviera Francesa">
-                <p>Explore como o estilo descontraído e elegante da Riviera Francesa influencia as coleções Jacquemus, trazendo um toque de sofisticação mediterrânica para cada peça.</p>
-                <a href="artigo5.html">Ver Detalhes</a>
-            </div>
-            
         </section>
     </div>
 

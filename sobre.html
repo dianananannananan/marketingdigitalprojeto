@@ -59,10 +59,88 @@
             height: 100px;
             filter: invert(1); /* Inverts the colors, making black white and vice versa */
         }
-        
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        .contact-form {
+            text-align: left;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #333;
+        }
+        .map-container {
+            margin-top: 20px;
+        }
+        .hours {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    display: flex;
+    justify-content: center;
+}
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        .minimalist-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .minimalist-images img {
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .minimalist-images img:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -78,8 +156,54 @@
 
     <div class="container">
         <section id="sobre">
-            <h2>Sobre Nós</h2>
-            <p>História e valores da empresa inspirada na Jacquemus.</p>
+            <h3>História da Jacquemus</h3>
+            <p>Jacquemus é uma marca de moda francesa fundada por Simon Porte Jacquemus em 2009. A marca é conhecida por suas peças minimalistas e inovadoras, que frequentemente desafiam as convenções da moda tradicional. Desde o seu início, Jacquemus tem se destacado por sua abordagem única e criativa, conquistando um lugar de destaque no cenário da moda internacional.</p>
+            <div class="minimalist-images">
+                <img src="imagens/sobrenos1.jpeg" alt="Imagem Minimalista 1">
+                <img src="imagens/sobrenos2.jpeg" alt="Imagem Minimalista 2">
+                <img src="imagens/sobrenos3.jpg" alt="Imagem Minimalista 3">
+            </div>
+            <h3>Valores da Empresa</h3>
+            <p>A Jacquemus valoriza a criatividade, a inovação e a autenticidade. A marca se esforça para criar peças que não apenas sejam esteticamente agradáveis, mas que também contem uma história e transmitam uma emoção. A sustentabilidade e a responsabilidade social também são pilares importantes para a Jacquemus, que busca constantemente maneiras de reduzir seu impacto ambiental e contribuir positivamente para a sociedade.</p>
+            <div class="minimalist-images">
+                <img src="imagens/sobrenos4.jpeg" alt="Imagem Minimalista 4">
+                <img src="imagens/sobrenos5.jpeg" alt="Imagem Minimalista 5">
+                <img src="imagens/sobrenos6.jpeg" alt="Imagem Minimalista 6">
+            </div>
+        </section>
+
+        <section id="contact">
+            <br>
+            <br>
+            <h2>Contato</h2>
+            <form class="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="location">
+            <h2>Localização</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.123456789!2d-9.139336!3d38.722252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331a1f1f1f1f%3A0x1a2b3c4d5e6f7g8h!2sLisboa!5e0!3m2!1spt!2spt!4v1611816751234!5m2!1spt!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="hours">
+            <h2>Horário de Funcionamento</h2>
+            <div class="hours">
+                <p>Segunda a Sexta: 9:00 - 18:00</p>
+                <p>Sábado: 10:00 - 14:00</p>
+                <p>Domingo: Fechado</p>
+            </div>
         </section>
     </div>
 

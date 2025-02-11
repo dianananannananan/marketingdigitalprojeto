@@ -9,11 +9,11 @@
     <title>Jacquemus - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff;
-            color: #000;
+            background-color: #f4f4f4;
+            color: #333;
             text-align: center;
         }
         header, footer {
@@ -21,23 +21,30 @@
             color: #fff;
             text-align: center;
             padding: 20px;
-            opacity: 1;
-            animation: fadeIn 1.5s ease-in-out forwards;
         }
         .container {
             width: 80%;
             margin: auto;
             padding: 20px;
         }
-        .produto, .artigo, #home, #sobre {
-            opacity: 1;
-            transform: translateY(20px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
+        .descricao {
+            margin: 40px 0;
+            font-size: 1.2em;
+            line-height: 1.6;
         }
-        .produto img, .artigo img {
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .galeria img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
-        .produto img:hover, .artigo img:hover {
+        .galeria img:hover {
             transform: scale(1.05);
         }
         nav a {
@@ -49,27 +56,9 @@
         nav a:hover {
             color: #ccc;
         }
-        .artigo .img-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .imagem-grande {
-            width: 100%;
-            max-width: 1200px;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px; /* Opcional: bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Opcional: efeito de sombra */
-        }
         .logo {
             height: 100px;
-            filter: invert(1); /* Inverts the colors, making black white and vice versa */
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            filter: invert(1);
         }
     </style>
 </head>
@@ -84,12 +73,19 @@
     </header>
 
     <div class="container">
-        <section id="home">
+        <section class="descricao">
             <h2>Bem-vindo à elegância minimalista</h2>
-            <p>Jacquemus, este site é um reflexo da simplicidade sofisticada...</p>
-            <img src="imagens/rosa.jpg.webp" alt="Imagem de moda Jacquemus" class="imagem-grande">
+            <p>Jacquemus é uma marca que reflete a simplicidade sofisticada e o luxo minimalista. Inspirada pela beleza natural e pela arte contemporânea, Jacquemus oferece uma coleção única de moda que combina estilo e conforto.</p>
         </section>
         
+        <section class="galeria">
+            <img src="imagens/rosa.jpg.webp" alt="Imagem de moda Jacquemus">
+            <img src="imagens/inicio2.jpg" alt="Imagem de moda Jacquemus">
+            <img src="imagens/inicio3.jpg" alt="Imagem de moda Jacquemus">
+            <img src="imagens/inicio4.jpeg" alt="Imagem de moda Jacquemus">
+            <img src="imagens/inicio5.jpg" alt="Imagem de moda Jacquemus">
+            <img src="imagens/inicio6.jpg" alt="Imagem de moda Jacquemus">
+        </section>
     </div>
 
     <footer>
